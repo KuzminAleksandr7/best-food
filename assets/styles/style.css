@@ -1,0 +1,764 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Tinos', serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    height: 100%;
+}
+.btn {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: #ff7400;
+    color: white;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 5px;
+    width: max-content;
+    text-transform: uppercase;
+    transition: all .2s ease;
+}
+.btn:hover {
+    background-color: rgb(255, 124, 17);
+    scale: 1.05;
+}
+.section-title{
+    font-weight: 400;
+    font-size: 54px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.section-title span{
+    color: #ff7400;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    z-index: 1;
+    background-color: #000000D1;
+    width: 100%;
+    padding: 10px;
+    transition: background-color .7s ease-in-out;
+}
+.header_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_logo img {
+    display: block;
+}
+#header_nav {
+    display: flex;
+    align-items: center;
+}
+.header_nav_list {
+    display: flex;
+    margin-right: 10px;
+}
+.header_nav_list li {
+    margin-right: 10px;
+}
+.header_link {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.header_link:hover {
+    color: #ff7400;
+}
+.header_link_active {
+    color: #ff7400;
+    border-bottom: 2px solid #ff7400;
+}
+.call_us {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    margin-right: 10px;
+    padding-left: 10px;
+    border-left: 1px solid #ffffff;
+}
+.call_us i {
+    color: #ff7400;
+}
+.call_us_number {
+    margin-left: 10px;
+}
+
+/* Intro */
+.intro {
+    background: url("../images/bg-intro.png") no-repeat;
+    background-size: 100vw;
+    height: 800px;
+    margin-bottom: 300px;
+}
+.intro_inner {
+    padding-top: 300px;
+    font-weight: 400;
+}
+.intro_info {
+    color: #ff7400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+    font-size: 50px;
+    text-shadow: 0px 0px 8px black, 0px 0px 2px black;
+}
+.intro_title {
+    font-size: 80px;
+    text-align: center;
+}
+#intro_subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    margin: 20px 0;
+    text-shadow: 0px 0px 8px black, 0px 0px 2px black;
+}
+#intro_subtitle:after,
+#intro_subtitle:before {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: -6px;
+    width: 50px;
+    height: 1px;
+    margin: 0 5px;
+    background: #fff;
+    box-shadow: 0px 0px 8px black, 0px 0px 2px black;
+}
+.intro_cards {
+    display: flex;
+    justify-content: space-around;
+}
+.intro_card {
+    width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px #000000;
+}
+.intro_card_head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+.intro_card_body {
+    font-weight: 400;
+    font-size: 26px;
+    text-align: center;
+    color: #656363;
+}
+.intro_card_title {
+    margin-bottom: 20px;
+}
+.intro_card_title span {
+    color: #BC9060;
+}
+
+/* History */
+.history {
+    margin-bottom: 120px;
+}
+.history_inner {
+    display: flex;
+    align-items: center;
+}
+.history_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 70px;
+    width: 50%;
+}
+.section-title--history{
+    margin-bottom: 40px;
+}
+.history_text {
+    font-weight: 400;
+    font-size: 16px;
+    color: #656363;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.history_info {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+}
+.history_info_item {
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+.history_info_item h4 {
+    color: #BC9060;
+    font-size: 40px;
+}
+.history_images {
+    width: 50%;
+}
+
+/* Reservation */
+.reservation {
+    background: url(../images/bg-reservation.png) no-repeat;
+    background-size: auto 350px;
+    background-position-x: center;
+    height: 350px;
+    margin-bottom: 120px;
+    background-color: #050808;
+}
+.reservation_inner{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.reservation_content{
+    text-align: center;
+    width: 50%;
+}
+.reservation-title{
+    font-size: 52px;
+    color: #D67E34;
+}
+.reservation_text{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+.reservation_btn_box{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Dish */
+.dish{
+    margin-bottom: 150px;
+}
+.dish_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dish_image{
+    width: 33%;
+    height: 100%;
+}
+.dish_list{
+    width: 65%;
+}
+.dish_item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.dish_item:last-child{
+    margin-bottom: 0;
+}
+.dish_item_image{
+    width: 150px;
+    height: 100%;
+    margin-right: 30px;
+}
+.dish_item_info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.dish_item_name{
+    font-weight: 400;
+    font-size: 26px;
+    width: 100%;
+    max-width: max-content;
+    text-align: center;
+}
+.dish_item_dots{
+    border-top: 4px dotted black;
+    width: 50%;
+    position: relative;
+    top: 12px;
+    margin: 0 10px;
+}
+.dish_item_price{
+    font-size: 26px;
+}
+
+/* Our Menu */
+.our-menu{
+    margin-bottom: 100px;
+}
+.our-menu__top{
+    position: relative;
+    margin-bottom: 20px;
+}
+.our-menu__price{
+    font-family: 'Cookie', cursive;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ff7400;
+    color: #FFFFFF;
+    border: 7px solid #FFFFFF;
+    font-size: 30px;
+}
+.our-menu__title{
+    font-size: 26px;
+    margin-bottom: 18px;
+    text-align: center;
+}
+.our-menu__text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Comments */
+.comments{
+    background-color: #E6E5E5;
+    padding-bottom: 50px;
+    margin-bottom: 100px;
+}
+.comments-comment{
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.comments-avatar{
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.comments-user-name{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Chefs */
+.chefs{
+    margin-bottom: 100px;
+}
+.chefs_images{
+    display: flex;
+    justify-content: space-around;
+}
+.chefs_images img{
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+
+/* Footer */
+.footer{
+    background-color: #000000D1;
+    padding: 60px 0 30px;
+}
+.footer_inner{
+    color: #FFFFFF;
+    text-align: center;
+}
+.footer_inner span{
+    color: #ff7400;
+}
+
+/* Mobile-menu */
+#burger {
+    display: none;
+    color: #ff7400;
+    cursor: pointer;
+    font-size: 30px;
+    transition: color .7s ease-in-out;
+}
+#burger:hover {
+    scale: 1.1;
+}
+#mobile-menu {
+    display: none;
+}
+
+
+@media (max-width: 1440px) {
+    /* Header */
+    .header_logo img {
+        width: 70px;
+    }
+
+    /* Intro */
+    .intro {
+        margin-bottom: 180px;
+    }
+    .intro_inner {
+        padding-top: 180px;
+    }
+    .intro_card {
+        width: 310px;
+    }
+
+    /* History */
+    .history_info_item h4 {
+        font-size: 38px;
+    }
+}
+@media (max-width: 1024px) {
+    .btn {
+        font-size: 12px;
+    }
+
+    /* Header */
+    .header_logo img {
+        width: 60px;
+    }
+    .header_link {
+        font-size: 12px;
+    }
+    .call_us_number {
+        font-size: 12px;
+    }
+
+    /* Intro */
+    .intro {
+        margin-bottom: 50px;
+    }
+    .intro_inner {
+        padding-top: 110px;
+    }
+    .intro_info {
+        font-size: 42px;
+        margin-bottom: 70px;
+    }
+    .intro_title {
+        font-size: 70px;
+    }
+    .intro_card {
+        width: 240px;
+    }
+    .intro_card_head {
+        padding: 5px 0;
+    }
+    .intro_card_body {
+        font-size: 20px;
+    }
+
+    /* History */
+    .history_content {
+        padding: 0 32px;
+    }
+
+    /* Dish */
+    .dish_wrapper{
+        flex-direction: column;
+    }
+    .dish_image{
+        display: none;
+    }
+    .dish_list{
+        width: 90%;
+    }
+    .dish_item{
+        margin-bottom: 30px;
+    }
+
+    /* Our Menu */
+    .our-menu__top img{
+        width: 160px;
+    }
+    .our-menu__price{
+        width: 80px;
+        height: 80px;
+        border-width: 4px;
+        font-size: 22px;
+    }
+}
+@media (max-width: 768px) {
+    .section-title{
+        font-size: 40px;
+        margin-bottom: 70px;
+    }
+    /* Header */
+    .header_logo img {
+        width: 40px;
+    }
+    #header_nav {
+        display: none;
+    }
+
+    /* Intro */
+    .intro {
+        height: auto;
+        background-position-x: center;
+        background-repeat: repeat-x;
+        background-size: auto 100vh;
+    }
+    .intro_info {
+        font-size: 30px;
+    }
+    .intro_title {
+        font-size: 50px;
+    }
+    #intro_subtitle {
+        font-size: 15px;
+        margin: 15px 0px;
+    }
+    .intro_cards {
+        align-items: center;
+        flex-direction: column;
+    }
+    .intro_card {
+        width: 60vw;
+        margin-bottom: 16px;
+    }
+    .intro_card_title {
+        margin-bottom: 8px;
+    }
+
+    /* History */
+    .history_inner {
+        flex-direction: column;
+    }
+    .history_content {
+        margin-bottom: 50px;
+        width: 70vw;
+        padding: 0;
+    }
+    .history_text {
+        margin-bottom: 20px;
+    }
+    .history_images {
+        width: 70vw;
+    }
+
+    /* Reservation */
+    .reservation_inner{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .reservation_content{
+        text-align: center;
+        width: 100%;
+    }
+    .reservation-title {
+        font-size: 40px;
+    }
+    .reservation_text{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .reservation_btn_box{
+        width: 100%;
+    }
+
+    /* Dish */
+    .dish_item_image{
+        width: 130px;
+    }
+    .dish_item_name{
+        font-size: 24px;
+    }
+    .dish_item_price{
+        font-size: 24px;
+    }
+
+    /* Our Menu */
+    .our-menu__top img{
+        width: 120px;
+    }
+    .our-menu__price{
+        width: 55px;
+        height: 55px;
+        border-width: 3px;
+    }
+    .our-menu__title{
+        margin-bottom: 6px;
+    }
+
+    /* Mobile-menu */
+    #burger {
+        display: block;
+        font-size: 26px;
+    }
+    #mobile-menu{
+        background-color: #000000D1;
+        width: 100vw;
+        height: calc(100vh - 46px);
+        padding-bottom: 20px;
+        border-top: 1px solid #ff7400;
+        position: fixed;
+        top: 46px;
+        left: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all .7s ease-in-out;
+        overflow-y: auto;
+    }
+    .mobile-menu_list{
+        min-height: 270px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .mobile-menu_list li{
+        position: relative;
+        text-align: center;
+        display: block;
+    }
+    .mobile-menu_list li:after{
+        content: '';
+        background-image: linear-gradient(90deg, #00000000 0%, #ff740070 50%, #00000000 100%);
+        width: 400px;
+        height: 1px;
+        position: absolute;
+        top: 38px;
+        left: -167.5px;
+    }
+    .mobile-menu_link{
+        font-family: 'Tinos', serif;
+        text-transform: uppercase;
+        font-size: 22px;
+    }
+    .call_us{
+        border: 0;
+        margin-bottom: 14px;
+    }
+    .call_us i {
+        color: #ff7400;
+    }
+    .call_us_number {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+}
+@media (max-width: 425px) {
+    .section-title {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+    /* History */
+    .history_info {
+        width: 100%;
+    }
+
+    /* Reservation */
+    .reservation {
+        margin-bottom: 90px;
+    }
+
+    /* Dish */
+    .dish_item_image{
+        margin-right: 10px;
+        width: 120px;
+    }
+    .dish_item_info{
+        flex-direction: column;
+        align-items: center;
+    }
+    .dish_item_dots{
+        display: none;
+    }
+
+    /* Our Menu */
+    .our-menu__top img{
+        width: 110px;
+    }
+
+    /* Comments */
+    .comments-comment{
+        font-size: 16px;
+    }
+
+    /* Chefs */
+    .chefs_images{
+        flex-direction: column;
+        align-items: center;
+    }
+    .chefs_images img{
+        flex: 0 0 90%;
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+
+    /* Mobile-menu */
+    .mobile-menu_list li:after{
+        width: 350px;
+        left: -143.5px;
+        top: 35px;
+    }
+    .mobile-menu_link{
+        font-size: 20px;
+    }
+}
+@media (max-width: 375px) {
+    /* Intro */
+    .intro_info {
+        font-size: 28px;
+    }
+    .intro_title {
+        font-size: 40px;
+    }
+    #intro_subtitle {
+        font-size: 13px;
+    }
+    .intro_card {
+        padding: 10px;
+        width: 70vw;
+    }
+
+    /* Dish */
+    .dish_item_image{
+        width: 100px;
+    }
+    .dish_item_name{
+        font-size: 22px;
+    }
+    .dish_item_price{
+        font-size: 22px;
+    }
+
+    /* Reservation */
+    .reservation-title {
+        font-size: 34px;
+    }
+
+    /* Comments */
+    .comments{
+        padding-bottom: 20px;
+    }
+
+    /* Mobile-menu */
+    .mobile-menu_list li:after{
+        width: 300px;
+        left: -117.5px;
+    }
+}

@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Open+Sans:wght@400;600;700&family=Tinos&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/itc-slider/itc-slider.css">
+    <title>BestFood</title>
+</head>
+<body>
+<header class="header" id="header">
+    <div class="container">
+        <div class="header_inner">
+            <a href="#" class="header_logo">
+                <img src="./assets/images/logo-w.png" alt="logo">
+            </a>
+            <nav id="header_nav">
+                <ul class="header_nav_list">
+                    <li><a href="#" class="header_link header_link_active">Головна</a></li>
+                    <li><a href="#" class="header_link">Меню</a></li>
+                    <li><a href="#" class="header_link">Про нас</a></li>
+                    <li><a href="#" class="header_link">Контакти</a></li>
+                </ul>
+                <div class="call_us">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <div class="call_us_number">
+                        <div>+38(000)-000-00-00</div>
+                        <div>Зателефонуйте нам!</div>
+                    </div>
+                </div>
+                <button class="btn">Забронювати столик</button>
+            </nav><!-- /header_nav -->
+            <i class="fa-solid fa-burger" id="burger" onclick="burger()"></i>
+        </div><!-- /header_inner -->
+    </div><!-- /container -->
+</header><!-- /header -->
+<section class="intro">
+    <div class="container">
+        <div class="intro_inner">
+            <div class="intro_info">
+                Ласкаво просимо
+                <h1 class="intro_title">Наш ресторан</h1>
+                <h2 id="intro_subtitle">Best Food</h2>
+                <button class="btn">Меню</button>
+            </div>
+            <div class="intro_cards">
+                <div class="intro_card">
+                    <div class="intro_card_head">
+                        <img src="./assets/images/intro-card.png">
+                    </div>
+                    <div class="intro_card_body">
+                        <div class="intro_card_title">Магічна <span>Атмосфера</span></div>
+                        <div class="intro_card_text">
+                            У нашому закладі панує магічна атмосфера наповнена смачними ароматами
+                        </div>
+                    </div>
+                </div>
+                <div class="intro_card">
+                    <div class="intro_card_head">
+                        <img src="./assets/images/intro-card.png">
+                    </div>
+                    <div class="intro_card_body">
+                        <div class="intro_card_title">Найкраща якість <span>Їжі</span></div>
+                        <div class="intro_card_text">
+                            Якість нашої їжі на високому рівні
+                        </div>
+                    </div>
+                </div>
+                <div class="intro_card">
+                    <div class="intro_card_head">
+                        <img src="./assets/images/intro-card.png">
+                    </div>
+                    <div class="intro_card_body">
+                        <div class="intro_card_title">Економна <span>Їжа</span></div>
+                        <div class="intro_card_text">
+                            Вартість нашої їжі залежить тільки від її кількості. Якість завжди на висоті!
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /intro_cards -->
+        </div><!-- /intro_inner -->
+    </div><!-- /container -->
+</section><!-- /intro -->
+<section class="history">
+    <div class="container">
+        <div class="history_inner">
+            <div class="history_content">
+                <h3 class="section-title section-title--history">Наша <span>Історія</span></h3>
+                <p class="history_text">Як і в будь-якого іншого самобутнього місця, ми маємо свою, особливу
+                    історію. Ідея ресторану прийшла засновникам несподівано. Під час прогулянки лісом твореці нашого
+                    ресторану застрягли за сотні кілометрів від найближчого населеного пункту. Вдалині від
+                    цивілізації та зв'язку їм довелося облаштувати собі нехитрий побут, добувати та готувати собі
+                    їжу.</p>
+                <div class="history_info">
+                    <div class="history_info_item">
+                        <h4>93</h4>
+                        Напої
+                    </div>
+                    <div class="history_info_item">
+                        <h4>206</h4>
+                        Їжа
+                    </div>
+                    <div class="history_info_item">
+                        <h4>71</h4>
+                        Закуски
+                    </div>
+                </div><!-- /history_info -->
+            </div><!-- /history_content -->
+            <img class="history_images" src="./assets/images/history.png">
+        </div><!-- /history_inner -->
+    </div><!-- /container -->
+</section><!-- /history -->
+<section class="reservation">
+    <div class="container">
+        <div class="reservation_inner">
+            <div class="reservation_content">
+                <div class="reservation-title">
+                    Відсвяткуйте в одному з найкращих ресторанів.
+                </div>
+                <div class="reservation_text">
+                    Тільки цього місяця бізнес-ланч від 250грн
+                </div>
+            </div>
+            <div class="reservation_btn_box">
+                <button class="btn">Замовити столик</button>
+            </div>
+        </div><!-- /reservation_inner -->
+    </div><!-- /container -->
+</section><!-- /reservation -->
+<section class="dish">
+    <div class="container">
+        <div class="dish_inner">
+            <h3 class="section-title">Наші <span>Страви</span></h3>
+            <div class="dish_wrapper">
+                <img class="dish_image" src="./assets/images/dish.png">
+                <div class="dish_list">
+                    <div class="dish_item">
+                        <img class="dish_item_image" src="assets/images/burger.png">
+                        <div class="dish_item_info">
+                            <h4 class="dish_item_name">Гамбургер міні</h4>
+                            <div class="dish_item_dots"></div>
+                            <div class="dish_item_price">220грн</div>
+                        </div>
+                    </div><!-- /dish_item -->
+                    <div class="dish_item">
+                        <img class="dish_item_image" src="assets/images/burger.png">
+                        <div class="dish_item_info">
+                            <h4 class="dish_item_name">Гамбургер міні</h4>
+                            <div class="dish_item_dots"></div>
+                            <div class="dish_item_price">220грн</div>
+                        </div>
+                    </div><!-- /dish_item -->
+                    <div class="dish_item">
+                        <img class="dish_item_image" src="assets/images/burger.png">
+                        <div class="dish_item_info">
+                            <h4 class="dish_item_name">Гамбургер міні</h4>
+                            <div class="dish_item_dots"></div>
+                            <div class="dish_item_price">220грн</div>
+                        </div>
+                    </div><!-- /dish_item -->
+                </div><!-- /dish_list -->
+            </div><!-- /dish_wrapper -->
+        </div><!-- /dish_inner -->
+    </div><!-- /container -->
+</section><!-- /dish -->
+<section class="our-menu">
+    <div class="container">
+        <div class="our-menu_inner">
+            <div class="section-title">Наше <span>Меню</span></div>
+            <div class="itc-slider" data-slider="itc-slider" data-loop="true" data-autoplay="true" data-interval="5000">
+                <div class="itc-slider__wrapper">
+                    <div class="itc-slider__items">
+                        <div class="itc-slider__item">
+                            <div class="our-menu__top">
+                                <img src="./assets/images/product.png" alt="burger">
+                                <div class="our-menu__price">400</div>
+                            </div>
+                            <div class="our-menu__title">Максі гамбургер</div>
+                            <div class="our-menu__text">Максимально товстий шмат м'яса</div>
+                            <button class="btn">Замовити</button>
+                        </div><!-- /itc-slider__item -->
+                        <div class="itc-slider__item">
+                            <div class="our-menu__top">
+                                <img src="./assets/images/product.png" alt="burger">
+                                <div class="our-menu__price">400</div>
+                            </div>
+                            <div class="our-menu__title">Максі гамбургер</div>
+                            <div class="our-menu__text">Максимально товстий шмат м'яса</div>
+                            <button class="btn">Замовити</button>
+                        </div><!-- /itc-slider__item -->
+                        <div class="itc-slider__item">
+                            <div class="our-menu__top">
+                                <img src="./assets/images/product.png" alt="burger">
+                                <div class="our-menu__price">400</div>
+                            </div>
+                            <div class="our-menu__title">Максі гамбургер</div>
+                            <div class="our-menu__text">Максимально товстий шмат м'яса</div>
+                            <button class="btn">Замовити</button>
+                        </div><!-- /itc-slider__item -->
+                        <div class="itc-slider__item">
+                            <div class="our-menu__top">
+                                <img src="./assets/images/product.png" alt="burger">
+                                <div class="our-menu__price">400</div>
+                            </div>
+                            <div class="our-menu__title">Максі гамбургер</div>
+                            <div class="our-menu__text">Максимально товстий шмат м'яса</div>
+                            <button class="btn">Замовити</button>
+                        </div><!-- /itc-slider__item -->
+                        <div class="itc-slider__item">
+                            <div class="our-menu__top">
+                                <img src="./assets/images/product.png" alt="burger">
+                                <div class="our-menu__price">400</div>
+                            </div>
+                            <div class="our-menu__title">Максі гамбургер</div>
+                            <div class="our-menu__text">Максимально товстий шмат м'яса</div>
+                            <button class="btn">Замовити</button>
+                        </div><!-- /itc-slider__item -->
+                    </div><!-- /itc-slider__items -->
+                </div><!-- /itc-slider__wrapper -->
+                <button class="itc-slider__btn itc-slider__btn_prev"></button>
+                <button class="itc-slider__btn itc-slider__btn_next"></button>
+                <ol class="itc-slider__indicators">
+                    <li class="itc-slider__indicator" data-slide-to="0"></li>
+                    <li class="itc-slider__indicator" data-slide-to="1"></li>
+                    <li class="itc-slider__indicator" data-slide-to="2"></li>
+                    <li class="itc-slider__indicator" data-slide-to="3"></li>
+                    <li class="itc-slider__indicator" data-slide-to="4"></li>
+                </ol><!-- /itc-slider__indicators -->
+            </div><!-- /itc-slider -->
+        </div><!-- /our-menu_inner -->
+    </div><!-- /container -->
+</section><!-- /our-menu -->
+<section class="comments">
+    <div class="container">
+        <div class="comments_inner">
+            <div class="itc-slider" data-slider="itc-slider" data-loop="true" data-autoplay="true"
+                 data-interval="10000">
+                <div class="itc-slider__wrapper">
+                    <div class="itc-slider__items">
+                        <div class="itc-slider__item">
+                            <div class="comments-comment">Perpetua idque nonumy tantas civibus atqui quaerendum
+                                mediocritatem. Reprehendunt varius accommodare accusata gloriatur libero nisi ludus
+                                cubilia auctor. <br>Neglegentur melius donec vestibulum purus dolorum inani. Commodo lorem
+                                mauris platonem facilis lacus commune erat molestie falli. Mediocrem sapientem etiam
+                                litora pulvinar audire quod. Voluptatibus inimicus quaestio reprimique consectetuer
+                                tacimates. Conubia donec molestiae audire mauris sit malesuada pro. Suavitate tale
+                                honestatis mediocritatem delicata postulant cum. <br>Mnesarchum tempor posidonium vel
+                                suavitate accommodare accumsan turpis facilisis discere. Definiebas voluptaria alienum
+                                efficiantur tempor epicuri docendi omittantur cubilia.
+                            </div>
+                            <img src="assets/images/avatar.png" alt="avatar" class="comments-avatar">
+                            <div class="comments-user-name">Тарас</div>
+                        </div><!-- /itc-slider__item -->
+                        <div class="itc-slider__item">
+                            <div class="comments-comment">Perpetua idque nonumy tantas civibus atqui quaerendum
+                                mediocritatem. Reprehendunt varius accommodare accusata gloriatur libero nisi ludus
+                                cubilia auctor. Neglegentur melius donec vestibulum purus dolorum inani. Commodo lorem
+                                mauris platonem facilis lacus commune erat molestie falli. Mediocrem sapientem etiam
+                                litora pulvinar audire quod. Voluptatibus inimicus quaestio reprimique consectetuer
+                                tacimates. Conubia donec molestiae audire mauris sit malesuada pro. Suavitate tale
+                                honestatis mediocritatem delicata postulant cum. Mnesarchum tempor posidonium vel
+                                suavitate accommodare accumsan turpis facilisis discere. Definiebas voluptaria alienum
+                                efficiantur tempor epicuri docendi omittantur cubilia.
+                            </div>
+                            <img src="assets/images/avatar.png" alt="avatar" class="comments-avatar">
+                            <div class="comments-user-name">Тарас</div>
+                        </div><!-- /itc-slider__item -->
+                        <div class="itc-slider__item">
+                            <div class="comments-comment">Perpetua idque nonumy tantas civibus atqui quaerendum
+                                mediocritatem. Reprehendunt varius accommodare accusata gloriatur libero nisi ludus
+                                cubilia auctor. Neglegentur melius donec vestibulum purus dolorum inani. Commodo lorem
+                                mauris platonem facilis lacus commune erat molestie falli. Mediocrem sapientem etiam
+                                litora pulvinar audire quod. Voluptatibus inimicus quaestio reprimique consectetuer
+                                tacimates. Conubia donec molestiae audire mauris sit malesuada pro. Suavitate tale
+                                honestatis mediocritatem delicata postulant cum. Mnesarchum tempor posidonium vel
+                                suavitate accommodare accumsan turpis facilisis discere. Definiebas voluptaria alienum
+                                efficiantur tempor epicuri docendi omittantur cubilia.
+                            </div>
+                            <img src="assets/images/avatar.png" alt="avatar" class="comments-avatar">
+                            <div class="comments-user-name">Тарас</div>
+                        </div><!-- /itc-slider__item -->
+                    </div><!-- /itc-slider__items -->
+                    <ol class="itc-slider__indicators">
+                        <li class="itc-slider__indicator" data-slide-to="0"></li>
+                        <li class="itc-slider__indicator" data-slide-to="1"></li>
+                        <li class="itc-slider__indicator" data-slide-to="2"></li>
+                    </ol><!-- /itc-slider__indicators -->
+                </div><!-- /itc-slider__wrapper -->
+            </div><!-- /itc-slider -->
+        </div><!-- /comments_inner -->
+    </div><!-- /container -->
+</section><!-- /comments -->
+<section class="chefs">
+    <div class="container">
+        <div class="chefs_inner">
+            <h3 class="section-title">Наші <span>Кухарі</span></h3>
+            <div class="chefs_images">
+                <img src="./assets/images/chef1.png" alt="chef">
+                <img src="./assets/images/chef2.png" alt="chef">
+                <img src="./assets/images/chef3.png" alt="chef">
+            </div>
+        </div><!-- /chefs_inner -->
+    </div><!-- /container -->
+</section><!-- /chefs -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer_inner">
+            Copyright &copy 2022 - 2023 Best<span>Food</span>. All rights reserved.
+        </div>
+    </div><!-- /container -->
+</footer><!-- /footer -->
+
+<!-- Mobile menu -->
+<nav id="mobile-menu">
+    <ul class="mobile-menu_list">
+        <li><a href="#" class="mobile-menu_link">Головна</a></li>
+        <li><a href="#" class="mobile-menu_link">Меню</a></li>
+        <li><a href="#" class="mobile-menu_link">Про нас</a></li>
+        <li><a href="#" class="mobile-menu_link">Контакти</a></li>
+    </ul>
+    <div class="call_us">
+        <i class="fa-solid fa-phone-volume"></i>
+        <div class="call_us_number">
+            <div>+38(000)-000-00-00</div>
+            <div>Зателефонуйте нам!</div>
+        </div>
+    </div>
+    <button class="btn">Забронювати столик</button>
+</nav><!-- /mobile-menu -->
+
+<script src="https://kit.fontawesome.com/690be35be6.js" crossorigin="anonymous"></script>
+<script src="./assets/scripts/script.js"></script>
+<script src="./assets/scripts/itc-slider/itc-slider.js"></script>
+</body>
+</html>
